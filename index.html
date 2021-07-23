@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serveroo DND Interest Survey</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h2>Serveroo DND Interest Survey</h2>
+<form
+  class="mainform"
+  action="https://formspree.io/f/mjvjedgv"
+  method="POST"
+>
+  <label>
+    <p>What is your name?</p>
+    <input type="text" name="name" class="text-input">
+  </label>
+  <label>
+    <p>What are some things you like in a fantasy setting/story?</p>
+    <textarea name="like-message" class="text-input"></textarea>
+  </label>
+  <label>
+    <p>What are some things you DON'T like in a fantasy setting/story?</p>
+    <textarea name="dislike-message" class="text-input"></textarea>
+  </label>
+    <label>
+    <p>Is this your first time playing a tabletop RPG?</p>
+    <select class="select-menu">
+        <option name="blank" value="blank" selected></option>
+        <option name="Yes" value="Yes">Yes</option>
+        <option name="No" value="No">No</option>
+    </select>
+  </label>
+    <label>
+    <p>Ideally, how many sessions per month do you want to play?</p>
+    <div class="slider-results-div">2</div>
+    <input type="range" min="1" max="4" value="2" class="slider"></input>
+  </label>
+    <label>
+    <p>What day of the week works best for you?</p>
+    <select class="select-menu">
+        <option name="2-blank" value="blank" selected></option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+  </label>
+      <label>
+    <p>On that day, would you prefer the evening or late night?</p>
+    <select class="select-menu">
+        <option name="3-blank" value="blank" selected></option>
+        <option value="Evening">Evening (5pm-10pm)</option>
+        <option value="Night">Night (10pm+)</option>
+    </select>
+  </label>
+    <label>
+    <p>Please list any other expectations, concerns, likes/dislikes, or anything else you want me to know here</p>
+    <textarea name="anything-else" class="text-input"></textarea>
+  </label>
+  <button type="submit">Submit</button>
+</form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
